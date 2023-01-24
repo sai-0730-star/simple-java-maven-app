@@ -1,0 +1,8 @@
+node{
+stage('SCM Checkout'){
+git 'https://github.com/sai-0730-star/simple-java-maven-app'
+}
+stage('Compile-Package'){
+sh 'mvn package'
+}
+}
